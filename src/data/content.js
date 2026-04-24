@@ -84,7 +84,7 @@ export const skillsData = [
 export const projectsData = [
   {
     slug: "fbise-rag-chatbot",
-    title: "FBISE RAG Chatbot",
+    title: "Pakistan's First Educational Chatbot",
     hook: "The first AI education chatbot built for Pakistan's federal board",
     problem:
       "LLMs are trained on generic British/American syllabi — Pakistani students using AI for studying get wrong or irrelevant answers.",
@@ -96,17 +96,31 @@ export const projectsData = [
     color: "bg-neo-accent",
   },
   {
-    slug: "llm-inference-xv6",
-    title: "LLM Inference on xv6",
-    hook: "Running an LLM inside a 128MB RAM operating system",
+    slug: "stock-prediction-rnn",
+    title: "Stock Prediction with RNN",
+    hook: "Predicting stock prices using recurrent neural networks and live sentiment analysis",
     problem:
-      "Can you make LLM inference work under extreme hardware constraints?",
+      "Stock prediction using only historical price data is limited — market sentiment matters.",
     solution:
-      "Integrated LLM inference into the xv6 teaching OS, working within just 128MB of RAM.",
+      "An RNN-based prediction model that incorporates live sentiment analysis for more informed predictions.",
     impact:
-      "Deep systems-level engineering. Shows understanding of what's happening under the hood, not just at the API layer.",
-    tech: ["xv6", "C", "LLM Inference", "Memory Optimization"],
+      "Combines deep learning with real-time data integration — systems that respond to the real world.",
+    tech: ["RNN", "Sentiment Analysis", "Python"],
     color: "bg-neo-secondary",
+  },
+  {
+    slug: "ai-insurance-estimator",
+    title: "AI Insurance Case Estimator",
+    hook: "Replacing days of lawyer review with seconds of AI accuracy.",
+    problem:
+      "Initial insurance case assessments required professional lawyers and multiple days of review — expensive, slow, and a bottleneck for the client's operations.",
+    solution:
+      "Built an AI system using n8n and the Anthropic API that takes case details as input and generates accurate insurance estimates in seconds, fully automating the initial assessment layer.",
+    impact:
+      "92.6% accuracy on case estimations. Eliminated lawyer dependency for initial case assessment, reducing turnaround from days to seconds. Actively deployed and used by the client.",
+    tech: ["n8n", "Anthropic API"],
+    color: "bg-neo-accent",
+    stat: { value: "92.6%", label: "estimation accuracy" },
   },
   {
     slug: "ai-content-pipeline",
@@ -137,28 +151,28 @@ export const projectsData = [
   },
   {
     slug: "cal-ai-clone",
-    title: "Cal AI Clone",
-    hook: "A calorie estimation app built from scratch using ML",
+    title: "Calorie Detection from Food Images",
+    hook: "Snap a photo of your meal — get an instant calorie breakdown using ML",
     problem:
-      "Can you replicate a commercial AI product using fundamental ML techniques?",
+      "Manual calorie tracking is tedious and inaccurate. Most people give up because logging food takes too long and requires nutritional knowledge they don't have.",
     solution:
-      "A calorie estimation system using K-means clustering and neural networks — a ground-up clone of Cal AI.",
+      "An image-based calorie detection system that identifies food items from photos and estimates caloric content using K-means clustering and neural networks.",
     impact:
-      "Shows strong ML fundamentals and the ability to reverse-engineer and rebuild a product.",
+      "Shows strong ML fundamentals — combining computer vision with nutritional estimation. Demonstrates the ability to build real-world ML pipelines from the ground up.",
     tech: ["K-Means", "Neural Networks", "Python"],
     color: "bg-neo-accent",
   },
   {
-    slug: "stock-prediction-rnn",
-    title: "Stock Prediction with RNN",
-    hook: "Predicting stock prices using recurrent neural networks and live sentiment analysis",
+    slug: "llm-inference-xv6",
+    title: "LLM Inference on xv6",
+    hook: "Running an LLM inside a 128MB RAM operating system",
     problem:
-      "Stock prediction using only historical price data is limited — market sentiment matters.",
+      "Can you make LLM inference work under extreme hardware constraints?",
     solution:
-      "An RNN-based prediction model that incorporates live sentiment analysis for more informed predictions.",
+      "Integrated LLM inference into the xv6 teaching OS, working within just 128MB of RAM.",
     impact:
-      "Combines deep learning with real-time data integration — systems that respond to the real world.",
-    tech: ["RNN", "Sentiment Analysis", "Python"],
+      "Deep systems-level engineering. Shows understanding of what's happening under the hood, not just at the API layer.",
+    tech: ["xv6", "C", "LLM Inference", "Memory Optimization"],
     color: "bg-neo-secondary",
   },
   {
